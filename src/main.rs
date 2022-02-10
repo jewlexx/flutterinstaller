@@ -7,4 +7,7 @@ fn main() {
     flutter_dir.push("Tools");
     create_dir_all(&flutter_dir);
     flutter_dir.push("flutter");
+
+    Repository::clone("https://github.com/flutter/flutter.git", flutter_dir)
+        .expect("Failed to clone flutter");
 }
