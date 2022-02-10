@@ -7,6 +7,4 @@ fn main() {
     flutter_dir.push("Tools");
     create_dir_all(&flutter_dir);
     flutter_dir.push("flutter");
-
-    println!("Hello, world!");
 }
